@@ -1,0 +1,23 @@
+#apropos{
+    width: 100%;
+    height: 80vh;
+    padding-top: 10%;
+    background-image: url('../../img/5f085809f2b711643e4eb4974cc03c0e.gif');
+    
+    
+    .apropos-cover{
+        width: 100%;
+        height: 88%;
+        padding-top: 100px;
+        background-color: rgba(0, 0, 0, 0.7);
+        
+
+        .apropos-content{
+            text-align: justify;
+            width: 40%;
+            color: white;
+            float: right;
+            margin-right: 50px;
+        }
+    }
+}

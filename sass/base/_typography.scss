@@ -1,0 +1,61 @@
+@font-face {
+    font-family: "futiger";
+    src: url("../../fonts/Frutiger.ttf");
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: "futiger";
+    src: url("../../fonts/Frutiger_bold.ttf");
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: "comic";
+    src: url("../../fonts/comic/ComicNeue-Regular.ttf");
+    font-weight: normal; // si fontweight normal applique cette police. 
+  }
+
+  // appliquera cette police si on met font-weight bold qq part, il faut bien preciser font-weight bold ici pr
+  // que ça fonctionne apres, sinon il nous met le bold partout.
+  @font-face {
+    font-family: "comic";
+    src: url("../../fonts/comic/ComicNeue-Bold.ttf");
+    font-weight: bold; 
+  }
+
+  @font-face {
+    font-family: "comic";
+    src: url("../../fonts/comic/ComicNeue-Italic.ttf");
+    font-style: italic;
+  }
+
+ 
+  body{
+    margin: 0;
+    padding: 0;
+    height: 200vh;
+    font-family: 'futiger', sans-serif;
+    background-color: rgb(248, 248, 248);
+  }
+
+  .content-title-underline{
+    width: 50px;
+    height: 4px;
+    background-color: orange;
+    margin: 0 auto 30px auto;
+  }
+
+.parallax{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+  @media screen and (max-width: 1300px){
+
+  
+  }
