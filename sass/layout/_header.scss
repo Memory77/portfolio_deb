@@ -8,7 +8,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     color: #000000;
-    padding: 20px;
+    padding: 40px;
     position: fixed;
     z-index: 50;
   }
@@ -37,6 +37,9 @@ nav {
     flex-direction: column;
     cursor: pointer;
     padding-right: 3%;
+    .burger{
+      width: 100px;
+    }
   }
   
   .line {
@@ -49,7 +52,10 @@ nav {
   .menu-items {
     display: flex;
     list-style: none;
-    padding-right: 3%;
+    padding: 1%;
+    padding-right: 4%;
+    background-color: black;
+
   }
   
   .menu-items li {
@@ -64,7 +70,7 @@ nav {
     text-transform: uppercase;
     font-size: 20px;
     &:hover{
-      color: rgb(0, 119, 255);
+      color: rgb(145, 7, 169);
   }
 }
 
@@ -81,6 +87,9 @@ nav {
     justify-content: center;
     align-items: center;
   }
+
+ 
+
   @media (max-width: 768px) {
     .burger-menu {
       display: flex;
@@ -93,7 +102,7 @@ nav {
     .menu-items.active {
       display: flex;
       flex-direction: column;
-      background-color: rgb(29, 41, 85);
+      background-color: rgb(73, 29, 85);
       position: absolute;
       top: 100%;
       left: 0;
@@ -106,3 +115,4 @@ nav {
       margin-bottom: 10px;
     }
   }
+  

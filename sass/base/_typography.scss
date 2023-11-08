@@ -30,6 +30,12 @@
     font-style: italic;
   }
 
+  @font-face {
+    font-family: "Pixelify";
+    src: url("../../fonts/PixelifySans-Bold.ttf");
+    font-style: bold;
+  }
+
  
   body{
     margin: 0;
@@ -42,8 +48,15 @@
   .content-title-underline{
     width: 50px;
     height: 4px;
-    background-color: orange;
+    background-color: rgb(192, 45, 184);
     margin: 0 auto 30px auto;
+  }
+
+  .content-title-underline2{
+    width: 50px;
+    height: 4px;
+    background-color: rgb(192, 45, 184);
+    margin-bottom: 30px;
   }
 
 .parallax{
@@ -53,6 +66,11 @@
   background-size: cover;
 }
 
+h1{
+  text-transform: uppercase;
+  font-family: 'Pixelify', sans-serif;
+  font-size: 40px;
+}
 
 
   @media screen and (max-width: 1300px){

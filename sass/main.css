@@ -23,6 +23,11 @@
   src: url("../../fonts/comic/ComicNeue-Italic.ttf");
   font-style: italic;
 }
+@font-face {
+  font-family: "Pixelify";
+  src: url("../../fonts/PixelifySans-Bold.ttf");
+  font-style: bold;
+}
 body {
   margin: 0;
   padding: 0;
@@ -34,8 +39,15 @@ body {
 .content-title-underline {
   width: 50px;
   height: 4px;
-  background-color: orange;
+  background-color: rgb(192, 45, 184);
   margin: 0 auto 30px auto;
+}
+
+.content-title-underline2 {
+  width: 50px;
+  height: 4px;
+  background-color: rgb(192, 45, 184);
+  margin-bottom: 30px;
 }
 
 .parallax {
@@ -43,6 +55,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: "Pixelify", sans-serif;
+  font-size: 40px;
 }
 
 .btn-brown {
@@ -69,7 +87,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   color: #000000;
-  padding: 20px;
+  padding: 40px;
   position: fixed;
   z-index: 50;
 }
@@ -98,6 +116,9 @@ a img {
   cursor: pointer;
   padding-right: 3%;
 }
+.burger-menu .burger {
+  width: 100px;
+}
 
 .line {
   width: 25px;
@@ -109,7 +130,9 @@ a img {
 .menu-items {
   display: flex;
   list-style: none;
-  padding-right: 3%;
+  padding: 1%;
+  padding-right: 4%;
+  background-color: black;
 }
 
 .menu-items li {
@@ -124,7 +147,7 @@ a img {
   font-size: 20px;
 }
 .menu-items li a:hover {
-  color: rgb(0, 119, 255);
+  color: rgb(145, 7, 169);
 }
 
 .nav_link_reseaux img {
@@ -152,7 +175,7 @@ li {
   .menu-items.active {
     display: flex;
     flex-direction: column;
-    background-color: rgb(29, 41, 85);
+    background-color: rgb(73, 29, 85);
     position: absolute;
     top: 100%;
     left: 0;
@@ -171,19 +194,153 @@ li {
   background-image: url("../../img/5f085809f2b711643e4eb4974cc03c0e.gif");
 }
 #apropos .apropos-cover {
-  width: 100%;
+  width: 50%;
   height: 88%;
-  padding-top: 100px;
   background-color: rgba(0, 0, 0, 0.7);
+  float: left;
 }
 #apropos .apropos-cover .apropos-content {
   text-align: justify;
-  width: 40%;
+  padding-top: 50px;
+  width: 70%;
   color: white;
-  float: right;
-  margin-right: 50px;
+  margin: auto;
+}
+#apropos .apropos-cover .apropos-content img {
+  width: 40%;
+  margin-left: 60%;
+  padding-top: 50px;
+  border-radius: 50%;
 }
 
+#hardskills {
+  padding: 5% 0;
+  height: 80vh;
+  background-color: rgb(220, 219, 219);
+}
+#hardskills .hardskills-title {
+  text-align: center;
+  color: black;
+  padding-bottom: 2%;
+}
+#hardskills #hardskills-content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 70px;
+  justify-content: center;
+}
+#hardskills #hardskills-content .logo-skills {
+  width: 150px;
+  margin-left: 35%;
+  margin-bottom: 40px;
+}
+#hardskills #hardskills-content li {
+  padding: 5px;
+}
+
+#projets {
+  padding: 5% 0;
+  background-image: url("../../img/coffee_in_rain_by_kirokaze-d98qb8z.webp");
+}
+#projets .projets-title {
+  text-align: center;
+  color: white;
+  padding-bottom: 2%;
+}
+#projets .card {
+  border: 3px solid white;
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px rgb(192, 45, 184);
+  background-position: center;
+  background-size: cover;
+  padding: 10%;
+  font-family: "Pixelify";
+  font-size: 40px;
+  text-align: center;
+}
+#projets .card a {
+  text-decoration: none;
+  color: black;
+}
+#projets .card a:hover {
+  color: rgb(192, 45, 184);
+}
+#projets .card.card1 {
+  background-image: url("../../img/wator.png");
+}
+#projets .card1 {
+  background-image: url("img/23412278894_25cda29b4d_b.jpg");
+}
+#projets .card1 {
+  background-image: url("img/23412278894_25cda29b4d_b.jpg");
+}
+#projets .card1 {
+  background-image: url("img/23412278894_25cda29b4d_b.jpg");
+}
+#projets .card1 {
+  background-image: url("img/23412278894_25cda29b4d_b.jpg");
+}
+#projets .card1 {
+  background-image: url("img/23412278894_25cda29b4d_b.jpg");
+}
+#projets .grid {
+  display: grid;
+  grid-gap: 10px;
+  width: 60%;
+  margin: auto;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-template-rows: repeat(5, 200px);*/
+}
+#projets .card:nth-child(1) {
+  grid-column: 1/span 3;
+}
+#projets .card:nth-child(2) {
+  grid-row: 2/4;
+}
+#projets .card:nth-child(5) {
+  grid-column: 2/4;
+}
+#projets .card:nth-child(6) {
+  grid-column: 1/span 2;
+}
+
+#formations {
+  padding: 5% 0;
+  height: 60vh;
+  background-image: url("../../img/coffee_in_rain_by_kirokaze-d98qb8z.webp");
+}
+#formations .formations-title {
+  text-align: center;
+  color: white;
+  padding-bottom: 2%;
+}
+
+#hobbies {
+  padding: 5% 0;
+  height: 60vh;
+  background-color: rgb(220, 219, 219);
+}
+#hobbies .hobbies-title {
+  text-align: center;
+  color: black;
+  padding-bottom: 2%;
+}
+
+@media (max-width: 1534px) {
+  #hardskills {
+    height: 150vh;
+  }
+}
+@media (max-width: 990px) {
+  .menu-items li a {
+    font-size: 15px;
+  }
+  #apropos .apropos-cover {
+    width: 90%;
+    padding-top: 50px;
+  }
+}
 /*!
  * animate.css -http://daneden.me/animate
  * Version - 3.7.0

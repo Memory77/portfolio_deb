@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- title -->
-    <title>Nom du site</title>
+    <title>Portfolio Deborah Soccio</title>
     <!-- favicon -->
     <link rel="shortcut icon" href="img/logoV2_pizzapasta.png">
     <!-- sass -->
@@ -19,13 +19,15 @@
             <div class="nav_link_reseaux"> 
               <li><a href="https://github.com/Memory77" target="_blank"><img src="img/github (1).png" alt="github"></a></li>
               <li><a href="https://www.linkedin.com/in/deborah-soccio-748a21254/" target="_blank"><img src="img/linkedin.png" alt="linkedin"></a></li>
+              <li><a href="https://www.linkedin.com/in/deborah-soccio-748a21254/" target="_blank"><img src="img/discorde (1).png" alt="discord"></a></li>
             </div>
-            <a class="logo" href="#"><img src="img/profile-pic.png"></a>
+            <!--<a class="logo" href="#"><img src="img/profile-pic.png"></a> -->
           </div>
           <div class="burger-menu">
+            <!-- <div class="line"></div>
             <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+            <div class="line"></div> -->
+            <img src="img/carte-des-hamburgers.png" class="burger">
           </div>
           <ul class="menu-items">
             <li><a href="#">  A propos /</a></li>
@@ -37,25 +39,95 @@
       </nav>
 
 
-      <!-- le reste du code  -->
-
-     
       <section id="apropos" class="container parallax">
         <div class="apropos-cover">
           <div class="apropos-content">
-            <h1 class="wow animated fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">A propos de moi</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium, necessitatibus laudantium quibusdam nesciunt vero harum? Cum id, debitis, voluptates illo, ex tempore numquam corporis odio iure similique et quo fugiat.<br>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam excepturi veniam, ut porro eveniet assumenda tenetur dolorem dolores voluptate? Deleniti numquam aperiam perspiciatis fuga. Natus unde cupiditate aut voluptatum corrupti!
+            <h1 class="wow animated fadeInRight" data-wow-duration="1s" data-wow-delay="1s">A propos de moi</h1>
+            <div class="content-title-underline2"></div>
+            <p>Actuellement étudiante en développement IA chez Simplon débouchant sur les métiers de la Data, je recherche activement une alternance d’un an à partir de septembre 2024 au rythme de 3 semaines entreprise/1 semaine en formation.<br><br>
+
+              Passionnée par l'IA et la Data, je suis prête à mettre mes compétences au service de votre entreprise pour contribuer à son succès.
             </p>
+            <img src="img/deb.jpg" alt="portrait">
           </div>
         </div>
       </section>
       
-      <section id="hardskills" class="container">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolores aliquid accusantium, animi deleniti quas cupiditate nostrum. Illo nostrum, exercitationem ipsum vel quaerat quas recusandae numquam dolor, sint, quia dolore.</p>
+      <section id="hardskills">
+        <div class="hardskills-title">
+          <h1>dev ia & dev web</h1>
+          <div class="content-title-underline"></div>
+        </div>
+        <!-- <div class="logos-skills">
+          <img src="img/icons/ebrecher.png" alt="logo IA" class="logo-skills">
+          <img src="img/icons/programmation.png" alt="logo WEB" class="logo-skills">
+        </div> -->
+        <div id="hardskills-content">
+          <div class="ia">
+            <ul>
+              <img src="img/icons/ebrecher.png" alt="logo IA" class="logo-skills">
+              <li><strong>Concevoir, créer et interroger une base de donnée</strong> : MySQL, SqlLite3, 
+              PostgreSQL, MongoDB, UML</li>
+              <li><strong>Manipuler des données</strong> : Python, SQL, Pandas, Numpy</li>
+              <li><strong>Créer des visualisations</strong> : Seaborn, Matplotlib, Plotly, Tableau</li>
+              <li><strong>Mettre en place un algorithme de machine learning</strong> : Scikit learn, Keras, 
+                  Pytorch, Tensorflow</li>
+              <li><strong>Mettre en place une application intégrant l’IA</strong> : Streamlit, Flask</li>
+              <li><strong>Gestion de projet </strong>: Git, Github, Scrum, Agile, ML Flow</li>
+              <li><strong>Certification</strong> : Azure Certification AZ-900 et AI-900 (en cours), Agile (en cours)</li>
+            </ul>
+          </div>
+          <div class="web">
+            <ul>
+              <img src="img/icons/programmation.png" alt="logo WEB" class="logo-skills">
+              <li><strong>CMS Drupal</strong> :<br> Définir un thème front par défaut et un thème d’administration<br>
+              Créer son propre thème front et définir ses régions<br>
+              Système de templating, créer des blocks dans le module<br>
+              Créer son propre thème front et définir ses régions<br>
+              Utiliser Twig, créer des vues avec View module<br>
+              Créer un formulaire de configuration, créer un import csv<br>
+              Récupérer les données d’un formulaire, faire des renders et des preprocess<br>
+              Créer un formulaire(api form Drupal, webform module)<br>
+              Utiliser les modules Paragraph, Inline Entity form, Média<br>
+            </li>
+              <li>CMS headless Scrapy</li>
+              <li><strong>Compétences Front</strong> : HTML/CSS/SASS<br>JS,jquery<br>Figma</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="projets" class="parallax">
+        <div class="projets-title">
+          <h1>Mes projets</h1>
+          <div class="content-title-underline"></div>
+        </div>
+        
+        <div class="grid">
+          <div class="card card1"><a href="https://github.com/Memory77/Wa-tor" target="_blank">WATOR</a></div> 
+          <div class="card card2">Element 2</div>
+          <div class="card card3">Element 3</div>
+          <div class="card card4">Element 4</div>
+          <div class="card card5">Element 5</div>
+          <div class="card card6">Element 6</div>
+          <div class="card card7">Element 7</div>
+      </div>
+    
       </section>
      
+      <section id="formations" class="parallax">
+        <div class="formations-title">
+          <h1>Mes formations</h1>
+          <div class="content-title-underline"></div>
+        </div>
+      </section>
 
+      <section id="hobbies">
+        <div class="hobbies-title">
+          <h1>Mes hobbies</h1>
+          <div class="content-title-underline"></div>
+        </div>
+      </section>
 
 
 
