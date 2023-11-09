@@ -22,9 +22,26 @@ $(function(){
 // exemple d'utilisation avec les deux ensembles : <h1 class="wow animated bounceInRight" data-wow-duration="1s" data-wow-delay="1s">TITRE 1 exemple</h1>
 
 
+$(function() {
+  // scroll on click // easing
+  $('a.smooth-scroll').click(function(event) {
+      event.preventDefault();
+      var section = $(this).attr('href');
+      $('html, body').animate(
+      {
+          scrollTop: $(section).offset().top - 64
+      },
+      1250,
+      "easeInOutExpo"
+      );
+  });
+});
+
+
+//owl carousel
 $(function(){
 
-  $("#clients-list").owlCarousel({
+  $("#hobbies-content").owlCarousel({
       items: 6,
       autoplay: true,
       smartSpeed: 700,

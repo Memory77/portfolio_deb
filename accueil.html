@@ -6,7 +6,7 @@
     <!-- title -->
     <title>Portfolio Deborah Soccio</title>
     <!-- favicon -->
-    <link rel="shortcut icon" href="img/logoV2_pizzapasta.png">
+    <link rel="shortcut icon" href="">
     <!-- sass -->
     <link href="sass/main.css" rel="stylesheet">
 </head>
@@ -30,10 +30,10 @@
             <img src="img/carte-des-hamburgers.png" class="burger">
           </div>
           <ul class="menu-items">
-            <li><a href="#">  A propos /</a></li>
-            <li><a href="#">  HARD SKILLS -   DEV IA & DEV WEB/</a></li>
-            <li><a href="#">  Mes projets /</a></li>
-            <li><a href="#">  Mes Formations /</a></li>
+            <li><a href="#apropos" class="smooth-scroll">  A propos /</a></li>
+            <li><a href="#hardskills" class="smooth-scroll">  HARD SKILLS -   DEV IA & DEV WEB/</a></li>
+            <li><a href="#formations" class="smooth-scroll">  Mes projets /</a></li>
+            <li><a href="#hobbies" class="smooth-scroll">  Mes Formations /</a></li>
           </ul>
         </div>
       </nav>
@@ -127,14 +127,60 @@
           <h1>Mes hobbies</h1>
           <div class="content-title-underline"></div>
         </div>
-        <div class="hobbies-content">
-
-
+        <div id="hobbies-content" class="owl-carousel owl-theme">
+          <div class="item">
+            <img src="img/painting.png" alt="img">
+            <p></p>
+            <a href="" target="_blank">Voir témoignage de ${nom}</a>
+          </div>
+          <div class="item">
+            <img src="" alt="img">
+            <p></p>
+            <a href="" target="_blank">Voir témoignage de ${nom}</a>
+          </div>
+          <div class="item">
+            <img src="" alt="img">
+            <p></p>
+            <a href="" target="_blank">Voir témoignage de ${nom}</a>
+          </div>
         </div>
       </section>
 
-
-
+      
+    <!-- footer -->
+    <footer>
+      <div id="footertop">
+          <div class="footercover">
+              <div class="footer-box">
+                  <div id="icons">
+                      <a href="" target="_blank"><img src="img/icons/facebook.png" alt="facebook icon"></a>
+                      <a href="" target="_blank"><img src="img/icons/youtube.png" alt="youtube icon"></a>
+                  </div>
+                  <div class="footer-content">
+                      <img src="" alt="logo">
+                      <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum at ipsum labore harum nemo earum esse unde expedita, </h2>
+                      <div id="contact-info">
+                          <p>9 rue du Gras-Boeuf<br>
+                            59163 Condé-sur-l’Escaut</p>
+                          <div id="phone-fax-email">
+                            <p><strong>Phone:</strong><span> 06 37 44 36 45</span><br>
+                            </p>
+                          </div>
+                      </div>
+                  <a class="btn btn-general btn-brown wow animated zoomIn" href="" target="_blank">Nous contacter</a>
+              </div>
+          </div>
+      </div>
+      <div id="copyright">
+          <p>Copyright © 2023 All Right Reserved by </p>
+          <ul>
+            <li><a href="#apropos" class="smooth-scroll">  A propos /</a></li>
+            <li><a href="#hardskills" class="smooth-scroll">  HARD SKILLS -   DEV IA & DEV WEB/</a></li>
+            <li><a href="#formations" class="smooth-scroll">  Mes projets /</a></li>
+            <li><a href="#hobbies" class="smooth-scroll">  Mes Formations /</a></li>
+          </ul>
+      </div>
+    </footer>
 
 
     <!-- jquery -->
@@ -145,6 +191,10 @@
 
     <!-- owl carousel JS -->
     <script src="js/owl-carousel/owl.carousel.min.js"></script> 
+
+    <!-- easing JS -->
+    <script src="js/easing/jquery.easing.1.3.js"></script> 
+
 
     <!-- script js -->
     <script src="js/custom.js"></script>

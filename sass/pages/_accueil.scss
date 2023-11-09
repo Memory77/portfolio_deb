@@ -172,6 +172,74 @@
     
     }
 }
+
+#hobbies-content{
+    .item{
+        position: relative;
+        padding: 20px;
+
+        img {
+            height: 550px;
+        }
+
+        p,
+        a {
+
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0%);
+            color: white;
+            text-align: center;
+            
+        }
+
+        a {
+            top: 5%;
+            background-color: orange;
+            font-weight: 700;
+            font-size: 17px;
+            padding: 10px;
+            width: 50%;
+            transition: .2s ease;
+
+            &:hover {
+                background-color: white;
+                color: orange;
+            }
+
+        }
+
+       
+
+        p {
+            font-size: 30px;
+            bottom: 5%;
+            width: 80%;
+            transition: .2s ease;
+            color: rgb(167, 109, 2);
+            border: 2px solid rgb(172, 112, 1);
+            background-color: rgb(240, 239, 239);
+            box-shadow: 3px 3px rgb(245, 166, 47);
+        }
+        
+        &:hover { // quand on met le curseur ,img bouge et blur met un flou
+            p {
+                bottom: 20%;
+            }
+
+            img {
+                height: 490px; 
+                filter: blur(2px);
+            }
+        }
+        
+       
+    }
+
+   
+}
+
+
 @media (max-width: 1410px) {
     #hardskills{
         height: 150vh;
