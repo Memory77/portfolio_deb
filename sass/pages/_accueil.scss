@@ -24,7 +24,7 @@
                 width: 40%;
                 margin-left: 60%;
                 padding-top: 50px;
-                border-radius: 50%;
+                //border-radius: 50%;
             }
         }
     }
@@ -51,8 +51,7 @@
         
         .logo-skills{
             width: 150px;
-            margin-left: 35%;
-            margin-bottom: 40px;
+            margin: 100px 0;
         }
         
         li{
@@ -86,9 +85,12 @@
     
     a{
         text-decoration: none;
-        color: black;
+        color: white;
         &:hover{
             color: rgb(192, 45, 184);
+            background-color: black;
+            padding: 5px;
+            border-radius: 3px;
         }
     }
     
@@ -96,20 +98,20 @@
 .card.card1{
     background-image: url("../../img/wator.png");
 }
-.card1{
+.card.card2{
+    background-image: url("../../img/pendu.png");
+}
+.card.card3{
+    background-image: url("../../img/shootemup.png");
+}
+.card.card4{
     background-image: url("img/23412278894_25cda29b4d_b.jpg");
 }
-.card1{
-    background-image: url("img/23412278894_25cda29b4d_b.jpg");
+.card.card5{
+    background-image: url("../../img/eurovelo.png");
 }
-.card1{
-    background-image: url("img/23412278894_25cda29b4d_b.jpg");
-}
-.card1{
-    background-image: url("img/23412278894_25cda29b4d_b.jpg");
-}
-.card1{
-    background-image: url("img/23412278894_25cda29b4d_b.jpg");
+.card.card6{
+    background-image: url("../../img/roadcrossing.png");
 }
 
 
@@ -147,7 +149,7 @@
 
 #formations{
     padding: 5% 0;
-    height: 60vh;
+    height: 70vh;
     background-image: url('../../img/coffee_in_rain_by_kirokaze-d98qb8z.webp');
 
     .formations-title{
@@ -172,7 +174,7 @@
 }
 @media (max-width: 1534px) {
     #hardskills{
-        height: 150vh;
+        //height: 150vh;
 
 
     }
@@ -192,8 +194,15 @@
             
         }
     }
+   #hardskills{
+    height: 180vh;
+
+
+    } 
 
 }
+
+
 @media (max-width: 768px) {
    
 }
