@@ -162,7 +162,7 @@
 
 #hobbies{
     padding: 5% 0;
-    height: 70vh;
+    height: 80vh;
     background-color: rgb(220, 219, 219);
 
     .hobbies-title{
@@ -277,7 +277,10 @@
 
 
 @media (max-width: 768px) {
-    #hobbies{
-        height: 80vh;
+   
+
+#apropos{
+    
+    height: 90vh;
 }
 }

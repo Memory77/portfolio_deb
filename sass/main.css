@@ -189,7 +189,7 @@ li {
 }
 #footertop {
   background-image: url("../../img/92009587580167.5dbc4c0433be8.gif");
-  height: 60vh;
+  height: 80vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -199,29 +199,26 @@ li {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
-#footertop .footercover .footer-box {
-  margin: 0 10%;
-  padding-top: 5%;
-}
-#footertop .footercover .footer-box p {
-  color: white;
-}
-#footertop .footercover .footer-box .footer-content {
+#footertop .footercover .footer-content {
   padding-bottom: 15px;
+  width: 50%;
   text-align: justify;
+  padding: 100px;
 }
-#footertop .footercover .footer-box .footer-content h1, #footertop .footercover .footer-box .footer-content h2 {
+#footertop .footercover .footer-content h1, #footertop .footercover .footer-content h2 {
   color: white;
   padding-bottom: 20px;
-  width: 60%;
 }
-#footertop .footercover .footer-box .footer-content #contact-rs {
+#footertop .footercover .footer-content p {
+  color: white;
+}
+#footertop .footercover .footer-content #contact-rs {
   display: flex;
   flex-direction: row;
   gap: 30px;
   padding: 40px 0;
 }
-#footertop .footercover .footer-box .footer-content #contact-rs img {
+#footertop .footercover .footer-content #contact-rs img {
   width: 150%;
 }
 
@@ -258,11 +255,10 @@ li {
 
 @media (max-width: 900px) {
   #footertop {
-    height: 80vh;
+    height: 100vh;
   }
   #footertop h2 {
     font-size: 20px;
-    width: 80%;
   }
   #copyright p, #copyright ul {
     font-size: 13px;
@@ -403,7 +399,7 @@ li {
 
 #hobbies {
   padding: 5% 0;
-  height: 70vh;
+  height: 80vh;
   background-color: rgb(220, 219, 219);
 }
 #hobbies .hobbies-title {
@@ -479,8 +475,8 @@ li {
   }
 }
 @media (max-width: 768px) {
-  #hobbies {
-    height: 80vh;
+  #apropos {
+    height: 90vh;
   }
 }
 /*!

@@ -62,7 +62,10 @@ $(function(){
         },
           // breakpoint from 992 up 
         992 : {
-            items: 3
+            items: 2
+        },
+        1300 : {
+            items : 3
         }
           
       }
