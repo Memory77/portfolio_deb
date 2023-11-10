@@ -63,19 +63,18 @@ h1 {
   font-size: 40px;
 }
 
-.btn-brown {
-  background-color: rgb(243, 233, 204);
-  color: rgb(3, 3, 3);
-  font-weight: bold;
-  border: 4px solid rgb(65, 43, 2);
-  box-shadow: 10px 5px 5px rgb(255, 153, 0);
-  border-radius: 5px;
-  font-size: 20px;
+.btn-pink {
+  text-decoration: none;
+  color: white;
+  font-family: "Pixelify";
+  text-transform: uppercase;
+  font-size: 30px;
 }
-.btn-brown:hover {
-  background-color: white;
-  color: orange;
-  border: 2px solid orange;
+.btn-pink:hover {
+  color: rgb(192, 45, 184);
+  background-color: black;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 nav {
@@ -189,40 +188,41 @@ li {
   }
 }
 #footertop {
-  background-color: grey;
+  background-image: url("../../img/92009587580167.5dbc4c0433be8.gif");
   height: 60vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #footertop .footercover {
   width: 100%;
   height: 100%;
-  padding-bottom: 100px;
-  background-color: rgba(57, 62, 63, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 #footertop .footercover .footer-box {
   margin: 0 10%;
   padding-top: 5%;
-}
-#footertop .footercover .footer-box #icons {
-  float: right;
 }
 #footertop .footercover .footer-box p {
   color: white;
 }
 #footertop .footercover .footer-box .footer-content {
   padding-bottom: 15px;
+  text-align: justify;
 }
-#footertop .footercover .footer-box .footer-content h2 {
+#footertop .footercover .footer-box .footer-content h1, #footertop .footercover .footer-box .footer-content h2 {
   color: white;
+  padding-bottom: 20px;
+  width: 60%;
 }
-#footertop .footercover .footer-box .footer-content img {
-  width: 100px;
-  background-color: rgba(245, 235, 235, 0.7);
-  border-radius: 25px;
-  border: 3px solid black;
-  padding: 5px;
+#footertop .footercover .footer-box .footer-content #contact-rs {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 40px 0;
 }
-#footertop .footercover .footer-box .footer-content #contact-info {
-  padding: 2% 0;
+#footertop .footercover .footer-box .footer-content #contact-rs img {
+  width: 150%;
 }
 
 #copyright {
@@ -248,30 +248,21 @@ li {
 #copyright ul a {
   color: white;
   padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 #copyright p a:hover,
 #copyright ul a:hover {
-  color: orange;
+  color: rgb(170, 13, 149);
 }
 
-@media screen and (max-width: 800px) {
-  footer #footertop .footer-box {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 20px;
-    position: relative;
+@media (max-width: 900px) {
+  #footertop {
+    height: 80vh;
   }
-  footer #footertop .footer-box a {
-    text-align: center;
-  }
-  footer #footertop .footer-box #icons {
-    display: flex;
-    flex-flow: row nowrap;
-    position: absolute;
-    right: 0px;
-  }
-  footer #footertop .footer-box .footer-content p {
-    text-align: justify;
+  #footertop h2 {
+    font-size: 20px;
+    width: 80%;
   }
   #copyright p, #copyright ul {
     font-size: 13px;
@@ -412,7 +403,7 @@ li {
 
 #hobbies {
   padding: 5% 0;
-  height: 60vh;
+  height: 70vh;
   background-color: rgb(220, 219, 219);
 }
 #hobbies .hobbies-title {
@@ -426,7 +417,9 @@ li {
   padding: 20px;
 }
 #hobbies-content .item img {
-  height: 550px;
+  height: 480px;
+  width: 65%;
+  margin: auto;
 }
 #hobbies-content .item p,
 #hobbies-content .item a {
@@ -435,35 +428,36 @@ li {
   transform: translate(-50%, 0%);
   color: white;
   text-align: center;
+  font-family: "Pixelify";
 }
 #hobbies-content .item a {
   top: 5%;
-  background-color: orange;
+  background-color: rgb(247, 127, 251);
   font-weight: 700;
   font-size: 17px;
-  padding: 10px;
-  width: 50%;
+  padding: 5px;
+  width: 40%;
   transition: 0.2s ease;
+  text-decoration: none;
 }
 #hobbies-content .item a:hover {
   background-color: white;
-  color: orange;
+  color: rgb(247, 127, 251);
 }
 #hobbies-content .item p {
   font-size: 30px;
   bottom: 5%;
-  width: 80%;
   transition: 0.2s ease;
-  color: rgb(167, 109, 2);
-  border: 2px solid rgb(172, 112, 1);
-  background-color: rgb(240, 239, 239);
-  box-shadow: 3px 3px rgb(245, 166, 47);
+  color: white;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: rgb(0, 0, 0);
 }
 #hobbies-content .item:hover p {
   bottom: 20%;
 }
 #hobbies-content .item:hover img {
-  height: 490px;
+  height: 400px;
   filter: blur(2px);
 }
 
@@ -482,6 +476,11 @@ li {
   }
   #hardskills {
     height: 180vh;
+  }
+}
+@media (max-width: 768px) {
+  #hobbies {
+    height: 80vh;
   }
 }
 /*!
@@ -2068,5 +2067,5 @@ li {
 }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  background: #34c6d3;
+  background: #e34ecd;
 }/*# sourceMappingURL=main.css.map */

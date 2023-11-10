@@ -54,15 +54,15 @@ $(function(){
         },
           // breakpoint from 480 up
         480 : {
-            items: 3
+            items: 1
         },
           // breakpoint from 768 up
-        768 : {
-            items : 5
+        890 : {
+            items : 2
         },
           // breakpoint from 992 up 
         992 : {
-            items: 6
+            items: 3
         }
           
       }

@@ -162,7 +162,7 @@
 
 #hobbies{
     padding: 5% 0;
-    height: 60vh;
+    height: 70vh;
     background-color: rgb(220, 219, 219);
 
     .hobbies-title{
@@ -179,7 +179,9 @@
         padding: 20px;
 
         img {
-            height: 550px;
+            height: 480px;
+            width: 65%;
+            margin: auto;
         }
 
         p,
@@ -190,21 +192,23 @@
             transform: translate(-50%, 0%);
             color: white;
             text-align: center;
+            font-family: 'Pixelify';
             
         }
 
         a {
             top: 5%;
-            background-color: orange;
+            background-color: rgb(247, 127, 251);
             font-weight: 700;
             font-size: 17px;
-            padding: 10px;
-            width: 50%;
+            padding: 5px;
+            width: 40%;
             transition: .2s ease;
+            text-decoration: none;
 
             &:hover {
                 background-color: white;
-                color: orange;
+                color: rgb(247, 127, 251);
             }
 
         }
@@ -214,12 +218,13 @@
         p {
             font-size: 30px;
             bottom: 5%;
-            width: 80%;
             transition: .2s ease;
-            color: rgb(167, 109, 2);
-            border: 2px solid rgb(172, 112, 1);
-            background-color: rgb(240, 239, 239);
-            box-shadow: 3px 3px rgb(245, 166, 47);
+            color: white;
+            padding: 5px;
+            //border: 2px solid white;
+            border-radius: 3px;
+            background-color: rgb(0, 0, 0);
+            //box-shadow: 3px 3px rgb(238, 47, 245);
         }
         
         &:hover { // quand on met le curseur ,img bouge et blur met un flou
@@ -228,7 +233,7 @@
             }
 
             img {
-                height: 490px; 
+                height: 400px; 
                 filter: blur(2px);
             }
         }
@@ -272,5 +277,7 @@
 
 
 @media (max-width: 768px) {
-   
+    #hobbies{
+        height: 80vh;
+}
 }
