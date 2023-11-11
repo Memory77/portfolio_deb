@@ -1,3 +1,16 @@
+#toggleAudio {
+  position: fixed;
+  top: 70px;
+  left: 50px;
+  background-color: black;
+  color: rgb(192, 45, 184);
+
+  &:hover{
+    color: white;
+  }
+}
+
+
 nav {
     position: fixed;
     width: 100%;

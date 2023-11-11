@@ -76,3 +76,13 @@ $(function(){
 
 //mettre la class class="owl-carousel owl-theme" à la div mère, a une flexbox par exemple. 
 
+
+//musique
+document.getElementById('toggleAudio').addEventListener('click', function() {
+  var audio = document.getElementById('audioPlayer');
+  if (audio.paused) {
+      audio.play();
+  } else {
+      audio.pause();
+  }
+});
