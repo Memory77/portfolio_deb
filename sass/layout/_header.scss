@@ -1,13 +1,9 @@
 #toggleAudio {
   position: fixed;
-  top: 70px;
+  top: 10px;
   left: 50px;
-  background-color: black;
-  color: rgb(192, 45, 184);
-
-  &:hover{
-    color: white;
-  }
+  background-color: transparent;
+  border-radius: 100%;
 }
 
 
